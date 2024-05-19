@@ -1,0 +1,336 @@
+/* ================== font link part start==================== */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ================== font link part end ==================== */
+/* ================== common css part start==================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+ul,ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --poppins:"Poppins", sans-serif;
+  --dancing:"Dancing Script", cursive;
+}
+/* ================== common css part end  ====================  */
+/* ================== main page part start  ====================  */
+body {
+  overflow: hidden;
+}
+#main_page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main_page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+}
+.main_menu {
+  position: relative;
+  text-align: center;
+}
+.main_page_result {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 37px;
+  color: #000;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.main_page_name {
+  font-family: "Podkova", serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #b813ce;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 2px;
+}
+.main_btn {
+  padding: 32px 32px;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 30px;
+  background-color: transparent;
+  color: #000; 
+  border: 2px solid #690975; 
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.main_btn:hover {
+  background: #690975;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.main_btn:active{
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* ================== main page part end  ====================  */
+/* ================== player introduction part start ====================  */
+#player_intro{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/player_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  visibility: hidden;
+}
+/* ================================================ Player one Introduction ============================== */
+.player_one_intro{
+  width: 700px;
+  height: 400px;
+  background: url(../images/player_one.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(34, 28, 36, 0.75);
+}
+.player_one_intro h3 , .player_two_intro h3{
+  font-family: var(--dancing);
+  font-weight: 900;
+  font-size: 44px;
+  color: #870d40;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.result{
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 2px;
+  color: #2541c1;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.result:hover {
+  color: #fff;
+}
+.result:active{
+  color: #d605f1;
+}
+/* ================================================ Player Two Introduction ============================== */
+.player_two_intro{
+  width: 700px;
+  height: 400px;
+  background: url(../images/player_two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(34, 28, 36, 0.75);
+  display: none;
+}
+/* ================== player introduction part end ====================  */
+/* ================== game begin part ====================  */
+.begin {
+  width: 600px;
+  height: 400px;
+  background: url(../images/lets_begin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(34, 28, 36, 0.75);
+  display: none;
+}
+.begin_button {
+  padding: 32px 32px;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff; 
+  text-shadow: 0 0 9px #FF0000, 0 0 5px #d8d8e7;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 110px;
+  margin-top: 200px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.begin_button:hover {
+  color: #e70a9e;
+  text-shadow: 2px 2px 4px #000000;
+}
+.begin_button:active{
+  color: #fff;
+}
+/* ================== player one input start ====================  */
+.player_input{
+  width: 500px;
+  height: 600px;
+  padding: 16px 16px;
+  background-color: rgba(220, 202, 220, 0.8);
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(34, 28, 36, 0.75);
+  display: none;
+}
+.show {
+  font-family: var(--dancing);
+  font-weight: 900;
+  font-size: 54px;
+  color: #37023e;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.player_one_img{
+  width: 300px;
+  height: 300px;
+  margin-top: -70px;
+  margin-left: 73px;
+}
+.error{
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -80px;
+  margin-bottom: 10px;
+}
+.main_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ================== player two input start ====================  */ 
+.player_two {
+  text-align: center;
+  display: none;
+}
+.player_one_input, .player_two_input{
+  width: 400px;
+  height: 50px;
+  outline: none;
+  border: 2px solid #870d40;
+  border-radius: 20px;
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+}
+.player_one_button, .player_two_button {
+  padding: 32px 32px;
+  border-radius: 50%;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid #690975; 
+  color: #000; 
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 30px;
+}
+.player_one_button, .player_two_button{
+  color: white;
+  background: #690975;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.player_one_button:hover, .player_two_button:hover {
+  color: #000;
+}
+.player_one_button:active, .player_two_button:active{
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.chance-main {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 16px 16px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 0 0 3px #1e0d0d, 0 0 5px #e6c0d8;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* =============== win part =================== */
+.win{
+  display: none;
+}
+.show_win{
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 35px;
+  color: #e7d9e3;
+  text-shadow: 2px 2px 4px #000;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.win img{
+  width: 500px;
+  height: 400px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.restart{
+  padding: 32px 32px;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  background: #690975;
+  border: 2px solid #690975; 
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 226px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.restart:hover{
+    color: #000;
+}
+
+  

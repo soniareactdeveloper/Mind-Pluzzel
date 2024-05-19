@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindPuzzle</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ================== main page part start ================ -->
+  <section id="main_page">
+    <div class="main_menu">
+     <h1 class="main_page_result">Welcome to the thrilling world of Number Quest!</h1>
+     <h2 class="main_page_name">MindPuzzle</h2>
+     <button class="main_btn">Play</button>
+    </div>
+ </section>
+  <!-- ================== main page part end ================ -->
+  <!-- ================== player introduction part start ================ -->
+  <section id="player_intro">
+      <div class="player_one_intro">
+         <h2 class="result">Player One</h2>
+         <h3>Mystery Master</h3>
+      </div>
+      <!-- ==================== player two =================== -->
+      <div class="player_two_intro">
+        <h2 class="result opponent">Player Two</h2>
+        <h3>Lucky Lucy</h3>
+      </div>
+      <!-- ============== game begin part ====================== -->
+      <div class="begin">
+        <button class="begin_button">Let's begin</button>
+      </div>
+      <!-- ================== player one Card ================== -->
+      <div class="player_input">
+        <div class="player_one_card">
+          <h2 class="show">Player One</h2>
+          <img class="player_one_img" src="images/giphy.gif" alt="giphy">
+          <p class="error"></p>
+          <div class="main_input player_one">
+            <input class="player_one_input" type="password" placeholder="Player One">
+            <button class="player_one_button">Start</button>
+          </div>
+        </div>
+         <!-- ================== player two Card ================== -->
+        <div class="main_input player_two">
+            <input class="player_two_input" type="number" placeholder="Player Two">
+            <button class="player_two_button">Guess</button>
+            <h3 class="chance-main">
+              Chance remain : <span class="chance">5</span>
+            </h3>
+        </div>
+      </div>
+      <!-- ========== win part ================= -->
+      <div class="win">
+        <h3 class="show_win guess">hello</h3>
+        <img src="images/win.gif" alt="win">
+        <button class="restart">Restart</button>
+      </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
